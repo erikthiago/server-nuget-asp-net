@@ -13,35 +13,35 @@
 </head>
 <body>
     <div>
-        <h2>You are running NuGet.Server v<%= typeof(NuGetODataConfig).Assembly.GetName().Version %></h2>
+        <h2>Você está acessando o repositório privado de Nuget.Server da DeveloperTI<%= typeof(NuGetODataConfig).Assembly.GetName().Version %></h2>
         <p>
-            Click <a href="<%= VirtualPathUtility.ToAbsolute("~/nuget/Packages") %>">here</a> to view your packages.
+            Clique <a href="<%= VirtualPathUtility.ToAbsolute("~/nuget/Packages") %>">aqui</a> para ver todos os pacotes.
         </p>
         <fieldset style="width:800px">
-            <legend><strong>Repository URLs</strong></legend>
-            In the package manager settings, add the following URL to the list of 
-            Package Sources:
+            <legend><strong>Repositório URLs</strong></legend>
+            No gerenciamento de pacotes, insira a URL da lista
+            Pacotes:
             <blockquote>
                 <strong><%= Helpers.GetRepositoryUrl(Request.Url, Request.ApplicationPath) %></strong>
             </blockquote>
             <% if (string.IsNullOrEmpty(ConfigurationManager.AppSettings["apiKey"])) { %>
-            To enable pushing packages to this feed using the <a href="https://www.nuget.org/downloads">NuGet command line tool</a> (nuget.exe), set the <code>apiKey</code> appSetting in web.config.
+            Temos senha para publicação.
             <% } else { %>
-            Use the command below to push packages to this feed using the <a href="https://www.nuget.org/downloads">NuGet command line tool</a> (nuget.exe).
+            <%--Use the command below to push packages to this feed using the <a href="https://www.nuget.org/downloads">NuGet command line tool</a> (nuget.exe).--%>
             <blockquote>
-                <strong>nuget.exe push {package file} {apikey} -Source <%= Helpers.GetPushUrl(Request.Url, Request.ApplicationPath) %></strong>
+                <%--<strong>nuget.exe push {package file} {apikey} -Source <%= Helpers.GetPushUrl(Request.Url, Request.ApplicationPath) %></strong>--%>
             </blockquote>
             <% } %> 
         </fieldset>
 
         <% if (Request.IsLocal) { %>
         <fieldset style="width:800px">
-            <legend><strong>Adding packages</strong></legend>
+            <legend><strong>Adicionando pacotes</strong></legend>
 
-            To add packages to the feed put package files (.nupkg files) in the folder
+            Insira o pacote nuget na pasta
             <code><% = PackageUtility.PackagePhysicalPath %></code><br/><br/>
 
-            Click <a href="<%= VirtualPathUtility.ToAbsolute("~/nuget/clear-cache") %>">here</a> to clear the package cache.
+            Clique <a href="<%= VirtualPathUtility.ToAbsolute("~/nuget/clear-cache") %>">aqui</a> para limpar o cache.
         </fieldset>
         <% } %>
     </div>
