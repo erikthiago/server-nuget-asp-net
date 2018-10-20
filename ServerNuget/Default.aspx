@@ -25,7 +25,7 @@
                 <strong><%= Helpers.GetRepositoryUrl(Request.Url, Request.ApplicationPath) %></strong>
             </blockquote>
             <% if (string.IsNullOrEmpty(ConfigurationManager.AppSettings["apiKey"])) { %>
-            Temos senha para publicação.
+            Temos senha para publicação de pacotes.
             <% } else { %>
             <%--Use the command below to push packages to this feed using the <a href="https://www.nuget.org/downloads">NuGet command line tool</a> (nuget.exe).--%>
             <blockquote>
