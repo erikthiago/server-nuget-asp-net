@@ -6,7 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>NuGet Private Repository</title>
+    <title>Repositório Privado NuGet developerTI</title>
     <style>
         body { font-family: Calibri; }
     </style>
