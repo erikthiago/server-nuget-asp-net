@@ -127,9 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Packages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.1.0.0.nupkg" />
-    <Content Include="Packages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.1.0.0.nupkg.sha512" />
-    <Content Include="Packages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.nuspec" />
+    <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.1.0.0.nupkg" />
+    <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.1.0.0.nupkg.sha512" />
+    <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.nuspec" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
