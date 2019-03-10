@@ -144,6 +144,9 @@
     <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.6\DeveloperTI.Framework.1.0.6.nupkg" />
     <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.6\DeveloperTI.Framework.1.0.6.nupkg.sha512" />
     <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.6\DeveloperTI.Framework.nuspec" />
+    <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.7\DeveloperTI.Framework.1.0.7.nupkg" />
+    <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.7\DeveloperTI.Framework.1.0.7.nupkg.sha512" />
+    <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.7\DeveloperTI.Framework.nuspec" />
     <None Include="packages.config" />
     <Content Include="NuggetPackages\DeveloperTI.Framework\1.0.0\DeveloperTI.Framework.1.0.0.nupkg" />
     <None Include="Web.Debug.config">
